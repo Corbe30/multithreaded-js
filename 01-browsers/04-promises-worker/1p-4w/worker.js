@@ -37,8 +37,6 @@ const commands = {
     }
 };
 
-
-
 self.onmessage = asyncOnMessageWrapper(async (rpc) => {
     const { requestId, method, params } = rpc;
     if (commands.hasOwnProperty(method)) {
